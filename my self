@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);   
+
+        System.out.print("Enter firstname: ");
+        String firstname = data.nextLine();  
+        
+        System.out.println("Enter surname: ");
+        String surname = data.nextLine(); 
+
+        System.out.println("Enter age: ");
+        int age = data.nextInt();  
+        
+        System.out.println("Enter sprno: ");
+        short sprno = data.nextShort();  
+
+        System.out.println("Enter sex (true, false): ");
+        boolean sex = data.nextBoolean(); 
+        
+        if (sex) {
+            System.out.println("Female"); 
+        } else {
+            System.out.println("Male");  
+        }
+
+        System.out.println("Enter height: ");
+        float height = data.nextFloat(); 
+
+        System.out.println("Enter salary: ");
+        double salary = data.nextDouble(); 
+
+        System.out.println("Enter mobileno: ");
+        int mobileno = data.nextInt(); 
+        
+        System.out.println("Have a great day");
+        
+        data.close();  
+    }
+}
