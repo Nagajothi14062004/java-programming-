@@ -1,3 +1,11 @@
+syntax:
+        // for (intialization,condition,increment)
+        // {   
+        //   // block of code
+        // }
+
+
+
 import java.util.Scanner;
 
 class Main {
