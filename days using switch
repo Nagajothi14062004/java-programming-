@@ -1,3 +1,22 @@
+syntax:
+    switch(variable)
+       {
+       
+       case 1:
+          System.out.println("");
+           break;
+       case 2:
+           System.out.println("");
+           break;
+      case 3:
+            System.out.println("");
+           break;
+   
+       default:
+               System.out.println("thank you");
+              
+
+
 import java.util.Scanner;
 
 class Main {
