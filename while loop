@@ -1,6 +1,10 @@
 // The while loop checks a condition before entering the loop, then executes the loop block 
 // if the condition is true. 
 
+syntax:
+   // while(condition){
+   // block of code
+}
 
 import java.util.Scanner;
 
