@@ -1,3 +1,8 @@
+//  The while loop and do while loop are useful for many situations, but you must control 
+// the boolean condition, ensuring that the variables change and eventually make the 
+// condition false. 
+
+
 syntax:
         // for (intialization,condition,increment)
         // {   
