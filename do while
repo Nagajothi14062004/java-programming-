@@ -1,3 +1,9 @@
+//  Because the condition is checked first in a while loop, it is possible that the loop may 
+// never execute. 
+
+
+
+
 syntax:
  do {
             
