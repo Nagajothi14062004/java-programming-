@@ -1,3 +1,7 @@
+// The while loop checks a condition before entering the loop, then executes the loop block 
+// if the condition is true. 
+
+
 import java.util.Scanner;
 
 class Main {
