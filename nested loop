@@ -3,6 +3,18 @@
 // executing a break statement.   Because you do not want the loop to end each time, the 
 // break statement is placed inside a conditional statement (if). 
 
+syntax:
+
+for (iniatilization,condition,increment)
+//         {   
+//           // block of code
+//             for (iniatilization,condition,increment)
+//             {   
+//             // block of code
+//             }
+
+
+
 
 
 import java.util.Scanner;
