@@ -1,0 +1,106 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("Enter start num:");
+      int st=sc.nextInt();
+      System.out.println("Enter last num:");
+      int lt=sc.nextInt();
+      double rn=st+Math.random()*((st+lt)+1);
+      System.out.println(rn);
+    }
+}
+
+output:
+            Enter start num:
+2
+Enter last num:
+10
+2.203716334105339
+
+
+ugly number:
+        import java.util.*;
+class main{
+    public static void main(String[] args){
+        Scanner data =new Scanner(System.in);
+        
+        
+        System.out.println("enter numbers:");
+        int number=data.nextInt();
+        
+            int original = number;
+
+            while (number % 2 == 0) {
+                number /= 2;
+            }
+
+            while (number % 3 == 0) {
+                number /= 3;
+            }
+
+            while (number % 5 == 0) {
+                number /= 5;
+            }
+            if(number==1){
+                System.out.println(original + " ugly number");
+            }
+    
+    else{
+        System.out.println(original + " not ugly number");
+    }
+    
+        }
+    }  
+
+
+
+output:
+     enter numbers:
+6
+6 ugly number
+
+
+
+ugly number:
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        
+        while (true) {
+            System.out.println("Enter number:");
+            int n = data.nextInt();
+
+            if (n <= 0) {
+                System.out.println("Invalid input");
+            } else if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0) {
+                System.out.println(n + " is an ugly number");
+            
+            } else {
+                System.out.println(n + " is a strong number");
+               
+            }
+            
+        }
+    }
+}
+
+output:
+Enter number:
+6
+6 is an ugly number
+Enter number:
+4
+4 is an ugly number
+Enter number:
+7
+7 is a strong number
+Enter number:
+11
+11 is a strong number
+Enter number:
+
+
