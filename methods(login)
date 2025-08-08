@@ -185,7 +185,6 @@ Enter password :
 diya
 Inavlid username or password!!
 Try again !
-
 Enter Username: 
 kavi
 Enter password :
@@ -193,6 +192,59 @@ diya
 Welcome..!!kavi
 
 === Code Execution Successful ===
+
+
+instance method:
+   modifier returntype name(){
+//method body
+}
+program:
+    
+
+class main
+{
+   public static void main(String[] args){
+         main obj=new main();
+          obj.sample();
+   }
+
+      public void  sample()
+    {
+       int  a=10;
+       System.out.println(a);
+     }
+}
+
+
+output:
+  10
+
+
+class add
+{
+    
+     public void  sample()
+    {
+      int a=10;
+      System.out.println(a);
+     }
+}
+  
+class Main{
+      public static void main(String[] args){
+         add obj=new add();
+          obj.sample();
+  }
+}
+
+output:
+   10
+ 
+    
+    
+         
+       
+
 
 
    
