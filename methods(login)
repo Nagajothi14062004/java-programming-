@@ -1,0 +1,198 @@
+import java.util.*;
+
+class Main {
+    public static void mymethod(String name)
+    {
+       
+        System.out.println(name);
+    }
+        
+     public static void main(String[] args)
+     {
+           mymethod("kavi");
+           
+     }
+}
+output:
+     kavi
+
+=== Code Execution Successful ===
+
+
+import java.util.*;
+
+class Main {
+    public static void mymethod(String a,String b)
+    {
+       
+        System.out.println( a  +  b );
+    }
+        
+     public static void main(String[] args)
+     {
+           mymethod("kavi","diya");
+           
+     }
+}
+
+
+output:
+    kavidiya
+
+=== Code Execution Successful ===
+
+import java.util.*;
+
+class Main {
+  
+    public static int add(int a,int b)
+    {
+        return a+b;
+    }
+        
+   public static int sub(int a,int b)
+    {
+        return a-b;
+    }
+        public static int mul(int a,int b)
+    {
+        return a*b;
+        
+    }
+        
+        public static int divide(int a,int b)
+    {
+        return a/b;
+    }
+     public static void main(String[] args){
+         Scanner data=new Scanner(System.in);
+        System.out.println("enter a  ");
+        int a=data.nextInt();
+        System.out.println("enter b  ");
+        int b=data.nextInt();
+       System.out.println(add(a,b));
+       System.out.println(sub(a,b));
+       System.out.println(mul(a,b));
+       System.out.println(divide(a,b));
+     }
+
+}
+
+
+output:  
+    enter a  
+54
+enter b  
+6
+60
+48
+324
+9
+
+=== Code Execution Successful ===
+
+import java.util.*;
+
+class instagram{
+  
+    public static void validation(String username ,String password)
+    {
+    if(username.equals("admin@123")&&password.equals("1234")){
+        System.out.println("valid");
+    }
+    else{
+     System.out.println("invalid"); 
+    }
+    }
+     public static void main(String[] args){
+         Scanner data=new Scanner(System.in);
+        System.out.println("enter username ");
+        String username=data.nextLine();
+        System.out.println("enter password");
+        String password=data.nextLine();
+       validation(username,password);
+     }
+
+}
+
+
+output:
+   enter username 
+kaviya
+enter password
+123456
+invalid
+
+=== Code Execution Successful ===
+
+import java.util.*;
+ 
+class instagram {
+   static String username="kavi";
+   static String password="diya";
+    public static void login(String x,String y)
+    {
+        if(x.equals(username)&& y.equals(password))
+         {
+            System.out.println("Welcome..!!"+x);
+         }
+        else
+         {
+            System.out.println("Invalid username or password!!");
+            System.out.println("Try again !\n");
+            retry();
+            
+         }
+    }
+    public static void retry()
+    {
+        Scanner n=new Scanner(System.in);
+        System.out.println("Enter Username: ");
+        String x=n.nextLine();
+        System.out.println("Enter password :");
+        String y=n.nextLine();
+        login(x,y);
+    }
+    
+    public static void main(String[] args)
+     {
+        Scanner n=new Scanner(System.in);
+        System.out.println("Enter Username: ");
+        String a=n.nextLine();
+        System.out.println("Enter password :");
+        String b=n.nextLine();
+        login(a,b);
+        
+     }
+        
+        
+        
+    
+}
+
+
+output:
+    Enter Username: 
+kavi
+Enter password :
+123455
+Inavlid username or password!!
+Try again !
+
+Enter Username: 
+ksaviya
+Enter password :
+diya
+Inavlid username or password!!
+Try again !
+
+Enter Username: 
+kavi
+Enter password :
+diya
+Welcome..!!kavi
+
+=== Code Execution Successful ===
+
+
+   
