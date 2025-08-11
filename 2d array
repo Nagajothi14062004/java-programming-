@@ -223,3 +223,52 @@ output:
 7 8 9 
 
 === Code Execution Successful ===
+
+matrix multiplication:
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);  
+
+        System.out.println("Enter row:");
+        int row = sc.nextInt();
+
+        System.out.println("Enter column:");
+        int col = sc.nextInt();
+
+        int[][] arr = new int[row][col];
+
+        System.out.println("Enter " + (row * col) + " elements:");
+
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.println("Matrix:");
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < col; j++) {
+                System.out.print(arr[i][j] + "\t");
+            }
+            System.out.println();
+        }
+
+        sc.close();
+    }
+}
+
+output;
+    Enter row:
+3
+Enter column:
+2
+Enter 6 elements:
+2 3 4 5 6 6 
+Matrix:
+2	3	
+4	5	
+6	6	
+
+=== Code Execution Successful ===
