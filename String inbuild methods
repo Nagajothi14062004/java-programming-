@@ -110,9 +110,73 @@ false
 
 === Code Execution Successful ===
 
-copyvalueof,endswith
+copyvalueof,endswith,equals:
+           import java.util.*;
 
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        char[] name = new char[5]; 
 
+        System.out.println("Enter 5 characters one by one:");
+        for (int i = 0; i < name.length; i++) {
+            name[i] = sc.next().charAt(0); 
+        }
+        String str = String.copyValueOf(name);
+       System.out.println("String formed: " + str);
 
+        String data = "nagajothi";
+        System.out.println(data.endsWith("jothi"));
+        System.out.println(data.equals(str));
+         
+    }
+}
+
+output:
+   Enter 5 characters one by one:
+k
+a
+v
+i
+y
+String formed: kaviy
+true
+false
+false
 
 === Code Execution Successful ===
+
+
+equalignorecase,format:
+         import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String data=" kaviya";
+        
+        System.out.println("enter name:");
+        String name=sc.nextLine();
+        System.out.println("enter age:");
+        int age=sc.nextInt();
+        String Hi="Hi %s myage %d";
+        System.out.println(data.equalsIgnoreCase(name)); 
+       
+        System.out.printf(Hi,name,age);
+        
+    }
+}
+
+output:
+enter name:
+kaviya
+enter age:
+21
+false
+Hi kaviya myage 21
+=== Code Execution Successful ===
+
+
+
+
+
