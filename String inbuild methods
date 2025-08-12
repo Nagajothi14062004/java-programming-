@@ -1,0 +1,118 @@
+
+
+charAt,codepointAt,codepointBefore:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter string:");
+        String name=sc.nextLine();
+        char y=name.charAt(5);
+        int y1=name.codePointAt(1);
+        int y2=name.codePointBefore(2);
+        System.out.println(y);
+        System.out.println(y1);
+        System.out.println(y2);
+    }
+}
+
+output:
+   enter string:
+kaviya
+a
+97
+97
+
+codepointcount,compareto:
+              
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter string:");
+        String name=sc.nextLine();
+        System.out.println("enter string:");
+        String name1=sc.nextLine();
+        
+        int y=name.codePointCount(0,5);
+        int y1=name.compareTo(name1);
+        System.out.println(y);
+        System.out.println(y1);
+    }
+}
+
+output:
+enter string:
+kaviya
+enter string:
+kaviya
+5
+0
+=== Code Execution Successful ===
+
+concat,comparetoignorecase:
+          
+
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter string:");
+        String name=sc.nextLine();
+        System.out.println("enter string:");
+        String name1=sc.nextLine();
+        
+        String y=name.concat( name1);
+        int y2=name.compareToIgnoreCase(name1);
+        System.out.println(y);
+        
+        System.out.println(y2);
+    }
+}
+
+output:
+   enter string:
+hello
+enter string:
+june
+hellojune
+-2
+
+=== Code Execution Successful ===
+
+contains,contentEquals:
+    
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner data=new Scanner(System.in);
+        System.out.println("enter string:");
+        String name=data.nextLine();
+        System.out.println(name.contains("He"));
+         System.out.println(name.contains("e"));
+          System.out.println(name.contains("Hi"));
+           System.out.println(name.contentEquals("Hello"));
+            System.out.println(name.contentEquals("H"));
+    }
+}
+output:
+   enter string:
+Hello
+true
+true
+false
+true
+false
+
+=== Code Execution Successful ===
+
+copyvalueof,endswith
+
+
+
+
+=== Code Execution Successful ===
