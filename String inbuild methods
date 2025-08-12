@@ -176,7 +176,154 @@ false
 Hi kaviya myage 21
 === Code Execution Successful ===
 
+getchars:
 
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        char[] data = {'0','1','2','3','4','5','6','7','8','9'};
+        System.out.println(data);
+        
+        String mystring = "HelloWorld";
+        
+      
+        mystring.getChars(7, 10, data, 4);
+        
+        System.out.println(data);  
+    }
+}
+
+
+output:
+   0123456789
+0123World9
+
+=== Code Execution Successful ===
+
+GETCHARS:
+   import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        char[] data = {'9','3','7','9','1','2','3','4'};
+        System.out.println(data);
+        
+        String mystring = " KAVI";
+        
+      
+        mystring.getChars(1, 5, data, 4);
+        
+        System.out.println(data);  
+    }
+}
+OUTPUT:
+   93791234
+9379KAVI
+
+=== Code Execution Successful ===
+
+getbytes:
+   import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        String name= " KAVI";
+        byte[] x=name.getBytes();
+      
+        
+        
+        System.out.println(x[0]);  
+    }
+}
+output:
+93791234
+32
+
+=== Code Execution Successful ===
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+       
+        
+        String name= " KAVI";
+        byte[] x=name.getBytes();
+     
+        System.out.println(x[0]); 
+        System.out.println(name.hashCode()); 
+    }
+}
+
+output:
+    32
+31852201
+
+=== Code Execution Successful ===
+
+
+uppercase,lowercase:
+       import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        String  x= "kavi";
+        System.out.println(x.toUpperCase()); 
+        System.out.println(x.toLowerCase()); 
+       
+    }
+}
+output:
+   KAVI
+kavi
+
+=== Code Execution Successful ===
+
+
+indexof,isempty:
+     import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        String  x= "HelloMyselfNagajothi";
+        System.out.println(x.indexOf("jothi")); 
+         System.out.println(x.isEmpty()); 
+      
+       
+    }
+}
+
+output:
+   15
+false
+
+=== Code Execution Successful ===
+
+JOINS:
+   import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        
+        String  x= String.join(" ","NAGA","JOTHI","N");
+        System.out.println(x); 
+      
+      
+       
+    }
+}
+
+OUTPUT:
+   NAGA JOTHI N
+
+=== Code Execution Successful ===
 
 
 
