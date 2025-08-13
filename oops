@@ -1,0 +1,14 @@
+class 
+syntax:
+  public class Main{
+  modifier keyword classname
+
+// block of code;
+
+}
+class class2{
+}
+
+if the class name will be private we cant access the class main into class2 .
+
+
