@@ -326,4 +326,185 @@ OUTPUT:
 === Code Execution Successful ===
 
 
+matches,regionmatches:
+   
+class Main {
+    public static void main(String[] args) {
+        String a="new world";
+        String b=" Hello world";
+        String x="Hello/world/java";
+        
+        System.out.println("Hello".matches(x));
+        System.out.println("world".matches(x));
+        System.out.println("javascript".matches(x));
+        System.out.println(b.regionMatches(7,a,4,5));
+    }
+}
+
+output:
+    false
+false
+false
+true
+
+=== Code Execution Successful ===
+
+replace,replaceall,replacefirst:
+        
+class Main {
+    public static void main(String[] args) {
+        String x="new world";
+        String y=" Hello world";
+     
+        
+        System.out.println(x.replace('e','a'));
+        String  a="(?i)Hello";
+        System.out.println(y.replaceAll(a,"kavi"));
+        String b="Hello";
+         System.out.println(y.replaceFirst(b,"hi"));
+    }
+}
+
+output:
+  naw world
+ kavi world
+ hi world
+
+=== Code Execution Successful ===
+
+split:
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter string:");
+        String x = sc.nextLine();
+
+        String regex = "[,\\.\\s]"; 
+        String[] z = x.split(regex);
+
+       
+        for (String s : z) {
+            System.out.println(s);
+        }
+
+       
+        String concatenated = String.join(" ", z);
+        System.out.println("Concatenated: " + concatenated);
+    }
+}
+
+output:
+   enter string:
+arokia cherlin
+arokia
+cherlin
+Concatenated: arokia cherlin
+
+=== Code Execution Successful ===
+
+startswith:
+   import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("enter string:");
+        String x = sc.nextLine();
+
+        System.out.println(x.startsWith("Hello"));
+        System.out.println(x.startsWith("He"));
+       
+      
+      
+    }
+}
+
+output:
+  enter string:
+Hello
+true
+true
+
+=== Code Execution Successful ===
+
+
+tostring,substring:
+    import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+         
+        String x = "arockia cherlin";
+        char[] y = x.toCharArray();
+        
+        
+        for (char ch : y) {
+            System.out.println(ch);
+        }
+
+        
+       
+        String sub = x.substring(0, 7); 
+        String sub1 = x.substring(7);   
+        System.out.println(sub + " " + sub1);
+        System.out.println(x.toString());
+        
+    }
+}
+output:
+    a
+r
+o
+c
+k
+i
+a
+ 
+c
+h
+e
+r
+l
+i
+n
+arockia  cherlin
+arockia cherlin
+
+=== Code Execution Successful ===
+
+trim,valueof:
+         import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+     
+     String x=" nagajothi  ";
+     
+        System.out.println(x);
+        System.out.println(x.trim());
+        System.out.println(String.valueOf(x));
+        System.out.println(String.valueOf(true));
+        
+        
+        
+    }
+}
+output:
+    nagajothi  
+nagajothi
+ nagajothi  
+true
+
+=== Code Execution Successful ===
+
+
+
+    
+
 
